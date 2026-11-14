@@ -1,0 +1,24 @@
+# Ignore secret environment variables
+.env
+.env.*
+*.env
+*.env.local
+
+# Ignore Python caches & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ignore test directories & test caches
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ignore virtual environments
+venv/
+.venv/
+env/
+
+# Ignore logs
+*.log

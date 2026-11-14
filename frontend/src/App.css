@@ -1,0 +1,50 @@
+/* AdShield – AI Cyber Defense Interface Styles */
+
+.cyber-card {
+  background-color: #0D1B2E;
+  border: 1px solid #1E3A5F;
+  border-radius: 1rem;
+}
+
+.cyber-card-elevated {
+  background-color: #11243A;
+  border: 1px solid #1E3A5F;
+  border-radius: 1rem;
+}
+
+.cyber-badge {
+  background-color: rgba(13, 27, 46, 0.8);
+  border: 1px solid #1E3A5F;
+  backdrop-filter: blur(8px);
+}
+
+.cyber-input {
+  background-color: #081426;
+  border: 1px solid #1E3A5F;
+  color: #F8FAFC;
+}
+
+.cyber-input:focus {
+  border-color: #22D3EE;
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.25);
+  outline: none;
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050B18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E3A5F;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563EB;
+}

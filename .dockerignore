@@ -1,0 +1,37 @@
+# Git
+.git/
+
+# Ignore secrets & environment files
+.env
+*.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+*.env.local
+
+# Python caches & virtual environments
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+backend/tests/
+venv/
+.venv/
+env/
+**/venv/
+**/env/
+
+# Frontend dependencies & build outputs
+node_modules/
+**/node_modules/
+frontend/
+dist/
+**/dist/
+
+# Documentation & presentation deliverables
+docs/
+deliverables/
+
+# Logs
+*.log

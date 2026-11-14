@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #050B18;
+    --bg-secondary: #081426;
+    --card-bg: #0D1B2E;
+    --card-elevated: #11243A;
+    --accent-blue: #2563EB;
+    --accent-cyan: #22D3EE;
+    --border-color: #1E3A5F;
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --risk-high: #EF4444;
+    --risk-medium: #F59E0B;
+    --risk-low: #10B981;
+  }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #F8FAFC;
+    background-color: #050B18;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom cybersecurity subtle glow & cyber grid styles */
+.cyber-grid {
+  background-size: 36px 36px;
+  background-image: 
+    linear-gradient(to right, rgba(34, 211, 238, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 211, 238, 0.04) 1px, transparent 1px);
+}
+
+.cyber-grid-dense {
+  background-size: 18px 18px;
+  background-image: 
+    linear-gradient(to right, rgba(37, 99, 235, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(37, 99, 235, 0.06) 1px, transparent 1px);
+}
+
+.cyber-glow-blue {
+  box-shadow: 0 0 25px -4px rgba(37, 99, 235, 0.35);
+}
+
+.cyber-glow-cyan {
+  box-shadow: 0 0 25px -4px rgba(34, 211, 238, 0.35);
+}
+
+.radar-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.radar-sweep::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent 0deg 300deg, rgba(34, 211, 238, 0.12) 360deg);
+  animation: rotateSweep 4s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotateSweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

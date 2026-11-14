@@ -1,0 +1,68 @@
+# ==============================================================================
+# AdShield .gitignore (Root Repository)
+# ==============================================================================
+
+# Node / Frontend Dependencies & Build Outputs
+node_modules/
+**/node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+**/dist/
+frontend/.vite/
+.vite/
+**/.vite/
+*.local
+
+# Python / Backend Virtual Environments & Bytecode
+__pycache__/
+**/__pycache__/
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*/*/__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+**/venv/
+**/env/
+**/ENV/
+
+# Testing & Pytest Caches
+.pytest_cache/
+**/.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment Variables & Secret Credentials
+.env
+*.env
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+*.env.local
+
+# Explicitly allow example env files with placeholder templates
+!.env.example
+!backend/.env.example
+!frontend/.env.example
+
+# Logs, OS & Editor Artifacts
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
